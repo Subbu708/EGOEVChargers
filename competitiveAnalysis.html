@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC EV Chargers Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1em;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #ffff00; /* Yellow background for header */
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        th:nth-of-type(2) {
+            background-color: #d3f4d3; /* Light green background for "Ego EV" */
+            color: green;
+        }
+        td:nth-of-type(2) {
+            background-color: #d3f4d3; /* Light green background for "Ego EV" */
+            color: green;
+        }
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+    </style>
+</head>
+<body>
+    <h2>AC EV Chargers Comparison</h2>
+    <table id="chargers-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Ego EV</th>
+                <th>Zappi</th>
+                <th>Wallbox Pulsar Max</th>
+                <th>Wallbox Copper SB</th>
+                <th>Eo Mini Pro 3</th>
+                <th>Eo Genius 2</th>
+                <th>Ohme Home Pro</th>
+                <th>Ohme ePod</th>
+                <th>EVBox Livo</th>
+                <th>Amstel Smart Charger</th>
+                <th>BG Sync EV</th>
+                <th>ABB Terra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table content -->
+            <tr>
+              <td>WiFi Connectivity</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Mobile Data Connectivity*</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Bluetooth Connectivity</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Ethernet Connectivity</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Smart Charging</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>7.2kW - Single Phase</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>22kW - Three Phase</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Tethered</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Socket</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OCPP 1.6</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>OCPP 2.0.1</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>User App</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>CPO Management</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+            </tr>
+            <tr>
+                          <td>Scheduled Charging</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Charger On/Off Control</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Charging Data</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Energy Use Data</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Dynamic Load Management</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Group Load Balancing</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Solar PV Connectivity</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Cable Lock</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Vehicle to Grid (V2G)</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RFID*</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>LCD Screen</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Indicator LED</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Anti-Tilt Detection*</td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PEN Detection*</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>* Optional Extra</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="downloadTable()">Download Table as HTML</button>
+
+    <script>
+        function downloadTable() {
+            const table = document.getElementById('chargers-table').outerHTML;
+            const htmlContent = '<html><head><title>AC EV Chargers Comparison</title></head><body>' + table + '</body></html>';
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'AC_EV_Chargers_Comparison.html';
+            a.click();
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
